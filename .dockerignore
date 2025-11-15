@@ -1,0 +1,5 @@
+#to ignore unnecessary files in Docker build context
+__pycache__/
+*.pyc
+.env
+.vscode/

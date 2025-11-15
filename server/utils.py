@@ -1,18 +1,19 @@
 import json
 import pickle
 import numpy as np
+import os
 __all_columns_unclassified = None
 __model = None
-
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 def get_all_columns_data() -> json:
     all_data_columns = None
     global __all_columns_unclassified
     global __model
-    with open("./columns_without_classification.json") as f:
+    with open(os.path.join(BASE_DIR, "columns_without_classification.json")) as f:
         __all_columns_unclassified = json.load(f)
-    with open('./columns.json', 'r') as f:
+    with open(os.path.join(BASE_DIR, "columns.json"), 'r') as f:
         all_data_columns = json.load(f)
-    with open('./price_prediction_model.pickle', 'rb') as f:
+    with open(os.path.join(BASE_DIR, "price_prediction_model.pickle"), 'rb') as f:
         __model = pickle.load(f)
     return all_data_columns
 
