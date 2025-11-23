@@ -1,0 +1,45 @@
+#chatbox {
+    margin-top: 40px;
+    padding: 20px;
+    width: 400px;
+    border: 2px solid #333;
+    border-radius: 10px;
+}
+
+#chat_area {
+    height: 200px;
+    overflow-y: scroll;
+    background: #fafafa;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.bot {
+    color: blue;
+    margin: 5px 0;
+}
+
+.user {
+    color: green;
+    margin: 5px 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#chatbox {
+    margin-top: 40px;
+    padding: 20px;
+    width: 400px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    background: white;
+    z-index: 10;
+}
+
+.input_elements {
+    margin-top: 50px;
+    width: 600px;
+}

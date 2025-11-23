@@ -88,4 +88,29 @@ function on_click_estimate_price() {
         document.getElementById('uiEstimatedPrice').innerHTML = "<b>Prix estimé : $" + data.estimated_price.toLocaleString() + "</b>";
     });
 }
-window.onload = onPageLoad
+
+function sendChat() {
+    let input = document.getElementById("chat_input");
+    let msg = input.value.trim();
+    if (!msg) return;
+
+    $("#chat_area").append(`<div class="user"><b>You:</b> ${msg}</div>`);
+    input.value = "";
+
+    $.ajax({
+        url: "http://127.0.0.1:5000/chatbot",
+        type: "POST",
+        contentType: "application/json",
+        data: JSON.stringify({ message: msg }),
+        success: function(data) {
+            $("#chat_area").append(`<div class="bot"><b>Bot:</b> ${data.response}</div>`);
+            let chatDiv = document.getElementById("chat_area");
+            chatDiv.scrollTop = chatDiv.scrollHeight;
+        },
+        error: function(err){
+            console.error("Erreur AJAX:", err);
+        }
+    });
+}
+
+window.onload = onPageLoad;

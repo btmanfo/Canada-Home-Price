@@ -1,0 +1,222 @@
+{
+  "intents": [
+
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hello",
+        "Hey",
+        "Good morning",
+        "Good evening",
+        "Hi there",
+        "Hey bot",
+        "What's up"
+      ],
+      "responses": [
+        "Hello! How can I help you with Canadian home prices today?",
+        "Hi! Ready to find a home?",
+        "Hey! What type of property are you looking for?"
+      ]
+    },
+
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "bye",
+        "goodbye",
+        "see ya",
+        "cya",
+        "talk to you later",
+        "I'm leaving"
+      ],
+      "responses": [
+        "Goodbye! Come back anytime you need home price information.",
+        "See you later!",
+        "Take care!"
+      ]
+    },
+
+    {
+      "tag": "ask_province",
+      "patterns": [
+        "I want a home",
+        "I want to search for a home",
+        "Help me find a home",
+        "Start search",
+        "Let's find a home",
+        "Find me a house",
+        "Find a condo for me"
+      ],
+      "responses": [
+        "Sure! Which province are you searching in?",
+        "Great! First, tell me the province.",
+        "Which province should I look into?"
+      ]
+    },
+
+    {
+      "tag": "provide_province",
+      "patterns": [
+        "Ontario",
+        "Quebec",
+        "British Columbia",
+        "Alberta",
+        "Manitoba",
+        "Nova Scotia",
+        "New Brunswick",
+        "Saskatchewan",
+        "Newfoundland",
+        "I'm searching in *province*"
+      ],
+      "responses": [
+        "Got it! Now tell me the city.",
+        "Perfect. Which city in that province?"
+      ]
+    },
+
+    {
+      "tag": "provide_city",
+      "patterns": [
+        "Toronto",
+        "Montreal",
+        "Vancouver",
+        "Calgary",
+        "Ottawa",
+        "Quebec City",
+        "I'm searching in *city*"
+      ],
+      "responses": [
+        "Nice! What type of home are you looking for?",
+        "Great! Now choose a home type: House, Condo, Apartment, etc."
+      ]
+    },
+
+    {
+      "tag": "ask_home_type",
+      "patterns": [
+        "What type of homes do you support?",
+        "House or condo?",
+        "What home types are available?"
+      ],
+      "responses": [
+        "You can choose between House, Condo, Apartment or Townhouse.",
+        "Supported home types: House, Condo, Apartment, Townhouse."
+      ]
+    },
+
+    {
+      "tag": "provide_home_type",
+      "patterns": [
+        "I want a house",
+        "I want a condo",
+        "Apartment",
+        "Townhouse",
+        "home type is *"
+      ],
+      "responses": [
+        "Great! Do you allow smoking in the home?",
+        "Understood! Now, should smoking be allowed?"
+      ]
+    },
+
+    {
+      "tag": "smoking_permission",
+      "patterns": [
+        "Yes smoking is allowed",
+        "No smoking",
+        "I don't want smoking",
+        "Smoking is okay",
+        "Smoking is not allowed"
+      ],
+      "responses": [
+        "Got it! How many bedrooms do you need?",
+        "Okay! Now tell me the number of bedrooms."
+      ]
+    },
+
+    {
+      "tag": "beds",
+      "patterns": [
+        "I need 2 bedrooms",
+        "3 beds",
+        "1 bedroom",
+        "4 bedrooms"
+      ],
+      "responses": [
+        "Perfect! How many bathrooms?",
+        "Great. Now tell me the number of bathrooms."
+      ]
+    },
+
+    {
+      "tag": "baths",
+      "patterns": [
+        "I need 1 bathroom",
+        "2 baths",
+        "3 bathrooms"
+      ],
+      "responses": [
+        "Nice! How many square feet are you looking for?",
+        "Okay! What size in square feet?"
+      ]
+    },
+
+    {
+      "tag": "sq_feet",
+      "patterns": [
+        "1000 square feet",
+        "2000 sq ft",
+        "around 1500 square feet",
+        "size is * sq ft"
+      ],
+      "responses": [
+        "Got it! Do you have cats?",
+        "Great! Now tell me how many cats you have."
+      ]
+    },
+
+    {
+      "tag": "cats",
+      "patterns": [
+        "I have 1 cat",
+        "I have 2 cats",
+        "No cats",
+        "0 cats"
+      ],
+      "responses": [
+        "Okay! Do you have dogs?",
+        "Nice! Now tell me the number of dogs."
+      ]
+    },
+
+    {
+      "tag": "dogs",
+      "patterns": [
+        "I have no dogs",
+        "1 dog",
+        "2 dogs",
+        "I have dogs"
+      ],
+      "responses": [
+        "Perfect! How many bedrooms are required for the listing?",
+        "Great! Finally, tell me the required number of bedrooms for the listing."
+      ]
+    },
+
+    {
+      "tag": "price_prediction",
+      "patterns": [
+        "What is the home price?",
+        "Give me the price",
+        "How much does the home cost?",
+        "Predict the home price",
+        "What is the estimated price?"
+      ],
+      "responses": [
+        "Let me calculate the price for you!",
+        "Sure! Predicting the home price now..."
+      ]
+    }
+  ]
+}
