@@ -1,4 +1,4 @@
-# 🏡 Canada Home Pricer
+# 🏡 Natural-Language Real Estate Price Assistant for Canadian Market 
 
 **Canada Home Pricer** is a web application that helps Canadians make smarter real estate decisions by providing accurate home price estimates and showing what types of homes they can afford across the country.  
 
@@ -58,3 +58,4 @@ docker run -p 5000:5000 my-chatbot
 ```bash
 docker run -it my-chatbot bash
 ```
+
